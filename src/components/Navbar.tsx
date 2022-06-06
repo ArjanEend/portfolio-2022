@@ -3,7 +3,11 @@ import { Link } from 'react-router-dom';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
-export default function Navbar() {
+export interface HeaderLink {
+    path: string, label: string
+}
+
+export default function Navbar({ links }: { links: HeaderLink[] }) {
     const [displayNav, setDisplayNav] = useState(false);
 
     function handleNav() {
@@ -16,18 +20,9 @@ export default function Navbar() {
 
                 <div>
                     <ul className='hidden md:flex'>
-                        <Link to='/'>
-                            <li className='ml-10 test-sm uppercase hover:border-b'>Home</li>
-                        </Link>
-                        <Link to='/'>
-                            <li className='ml-10 test-sm uppercase hover:border-b'>Projects</li>
-                        </Link>
-                        <Link to='/'>
-                            <li className='ml-10 test-sm uppercase hover:border-b'>Contact</li>
-                        </Link>
-                        <Link to='/'>
-                            <li className='ml-10 test-sm uppercase hover:border-b'>Something</li>
-                        </Link>
+                        {links.map(l => <Link to={l.path}>
+                            <li className='ml-10 test-sm uppercase hover:border-b'>{l.label}</li>
+                        </Link>)}
                     </ul>
                 </div>
                 <div onClick={handleNav} className='md:hidden'>
