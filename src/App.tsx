@@ -6,6 +6,7 @@ import { BrowserRouter, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import Routing, { AppRoute } from './components/Routing';
 import About from './components/About';
+import Skills from './components/Skills';
 
 const routes: Array<HeaderLink & AppRoute> = [
   { path: "/", label: "Home", element: <Home /> },
@@ -19,8 +20,15 @@ function App() {
       <BrowserRouter>
         <Navbar links={routes} />
         <Routing routes={routes} />
-      </BrowserRouter>
-    </div>
+        <Routes>
+
+        </Routes>
+        <Home />
+        <About />
+        <Skills />
+
+      </BrowserRouter >
+    </div >
   );
 }
 

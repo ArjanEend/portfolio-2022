@@ -15,7 +15,7 @@ export default function Navbar({ links }: { links: HeaderLink[] }) {
     }
 
     return (
-        <div className='fixed w-full h-20 shadow-lg shadow-main-500 z-[100]'>
+        <div className='fixed bg-bg w-full h-20 border-[#272626] border-b-4 z-[100]'>
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
 
                 <div>

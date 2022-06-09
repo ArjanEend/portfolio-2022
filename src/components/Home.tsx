@@ -15,14 +15,14 @@ export default function Home() {
                         I'm a full stack game engineer that loves to build (and design) anything technical for video games. Currently I'm building decentralized web3 applications that have utility for games.
                     </p>
                     <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-                        <div className='rounded-full border-[#ffffff30] border-4 shadow-md shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-150'>
-                            <FaLinkedin />
+                        <div className='rounded-full bg-main border-[#272626] border-[6px]  p-4 cursor-pointer hover:scale-105 ease-in duration-150'>
+                            <FaLinkedin size={32} color='#272626' />
                         </div>
-                        <div className='rounded-full border-[#ffffff30] border-4 shadow-md shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-150'>
-                            <FaGithub />
+                        <div className='rounded-full bg-main border-[#272626] border-[6px]  p-4 cursor-pointer hover:scale-105 ease-in duration-150'>
+                            <FaGithub size={32} color='#272626' />
                         </div>
-                        <div className='rounded-full border-[#ffffff30] border-4 shadow-md shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-150'>
-                            <FaLinkedin />
+                        <div className='rounded-full bg-main border-[#272626] border-[6px]  p-4 cursor-pointer hover:scale-105 ease-in duration-150'>
+                            <FaLinkedin size={32} color='#272626' />
                         </div>
                     </div>
                 </div>
