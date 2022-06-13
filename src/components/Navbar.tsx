@@ -2,6 +2,8 @@ import React, { ReactNode, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { HashLink } from 'react-router-hash-link';
+
 
 export interface HeaderLink {
     path: string, label: string
@@ -20,9 +22,9 @@ export default function Navbar({ links }: { links: HeaderLink[] }) {
 
                 <div>
                     <ul className='hidden md:flex'>
-                        {links.map(l => <Link to={l.path}>
+                        {links.map(l => <HashLink smooth key={l.path} to={l.path}>
                             <li className='ml-10 test-sm uppercase hover:border-b'>{l.label}</li>
-                        </Link>)}
+                        </HashLink>)}
                     </ul>
                 </div>
                 <div onClick={handleNav} className='md:hidden'>
@@ -46,18 +48,10 @@ export default function Navbar({ links }: { links: HeaderLink[] }) {
                         </div>
                         <div>
                             <ul>
-                                <Link to="/">
-                                    <li className='py-4 text-sm'>Home</li>
-                                </Link>
-                                <Link to="/">
-                                    <li className='py-4 text-sm'>Home</li>
-                                </Link>
-                                <Link to="/">
-                                    <li className='py-4 text-sm'>Home</li>
-                                </Link>
-                                <Link to="/">
-                                    <li className='py-4 text-sm'>Home</li>
-                                </Link>
+
+                                {links.map(l => <HashLink smooth key={l.path} to={l.path}>
+                                    <li onClick={() => setDisplayNav(false)} className='py-4 text-sm'>{l.label}</li>
+                                </HashLink>)}
                             </ul>
                         </div>
                         <div className='pt-40'>

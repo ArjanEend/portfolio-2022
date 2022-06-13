@@ -6,7 +6,16 @@ module.exports = {
   ],
   theme: {
     extend: {
-      transitionTimingFunction: {}
+      transitionTimingFunction: {
+        'in-expo': 'cubic-bezier(0.95, 0.05, 0.795, 0.035)',
+        'out-expo': 'cubic-bezier(0.19, 1, 0.22, 1)',
+        'bounce': 'cubic-bezier(.18,-0.01,.42,1.34)'
+      },
+      boxShadow: {
+        'square': '8px 8px 0px 2px rgba(0, 0, 0, 1)',
+        'inside': 'inset 0px 0px 0px 8px rgba(0, 0, 0, 1)',
+        'fill': 'inset 0px 0px 0px 200px rgba(0, 0, 0, 1)'
+      }
     },
     colors: {
       transparent: 'transparent',
@@ -19,7 +28,11 @@ module.exports = {
       yellow: colors.yellow,
       red: colors.red,
       blue: colors.blue,
-      bg: '#F2EBE9',
+      bg:
+      {
+        DEFAULT: '#F2EBE9',
+        300: '#c59ebf',
+      },
       main:
       {
         DEFAULT: '#7C3E66',
