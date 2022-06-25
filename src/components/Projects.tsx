@@ -10,8 +10,8 @@ export default function Projects() {
                 <h2></h2>
                 <div className='grid md:grid-cols-2 gap-8'>
 
-                    <ProjectItem title="Panzerdog" backgroundImg="/assets/skills/unity3d.png" url="/"></ProjectItem>
-                    <ProjectItem title="Panzerdog" backgroundImg="/assets/skills/unity3d.png" url="/"></ProjectItem>
+                    <ProjectItem title="Panzerdogs" backgroundImg="/assets/skills/unity3d.png" url="/projects/panzerdogs"></ProjectItem>
+                    <ProjectItem title="Panzerdogs" backgroundImg="/assets/skills/unity3d.png" url="/"></ProjectItem>
                 </div>
 
             </div>

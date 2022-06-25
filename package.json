@@ -2,7 +2,7 @@
   "name": "portfolio-2022",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://arjaneend.github.io",
+  "homepage": "https://arjaneend.github.io/portfolio-2022",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -11,6 +11,7 @@
     "@types/node": "^16.11.36",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.5",
+    "@types/react-router-hash-link": "^2.4.5",
     "gh-pages": "^4.0.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",

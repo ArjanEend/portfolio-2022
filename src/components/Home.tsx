@@ -7,7 +7,7 @@ export default function Home() {
             <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
                 <div>
                     <p className='uppercase text-sm tracking-widest text-gray-600'>
-                        Making code come alive
+                        Bring code to life
                     </p>
                     <h1 className='py-4 text-gray-700'>Hi, I'm <span className='text-strong-emphasis'>Arjan</span></h1>
                     <h1 className='py-4 text-gray-700'>A Full-Stack <span className='text-strong-emphasis'>Game</span> & <span className='text-strong-emphasis'>Web3</span> Developer</h1>

@@ -1,5 +1,5 @@
-import React, { ReactNode, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { ReactNode, useEffect, useState } from 'react';
+import { Link, useMatch, useNavigate, useRoutes } from 'react-router-dom';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HashLink } from 'react-router-hash-link';
@@ -11,19 +11,31 @@ export interface HeaderLink {
 
 export default function Navbar({ links }: { links: HeaderLink[] }) {
     const [displayNav, setDisplayNav] = useState(false);
+    const [navColor, setNavColor] = useState("bg");
+    const [navLinkColor, setNavLinkColor] = useState("bg");
+    const match = useMatch("projects/*");
 
     function handleNav() {
         setDisplayNav(_ => !_);
     }
 
-    return (
-        <div className='fixed bg-bg w-full h-20 border-[#272626] border-b-4 z-[100]'>
-            <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
+    useEffect(() => {
+        if (match) {
+            setNavColor("black/0");
+            setNavLinkColor("bg");
+            return;
+        }
+        setNavColor("bg");
+        setNavLinkColor("black");
+    }, [match]);
 
+    return (
+        <div className={`fixed bg-${navColor} w-full h-20 border-[#272626] border-b-${match ? 0 : 4} z-[100]`}>
+            <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
                 <div>
                     <ul className='hidden md:flex'>
                         {links.map(l => <HashLink smooth key={l.path} to={l.path}>
-                            <li className='ml-10 test-sm uppercase hover:border-b'>{l.label}</li>
+                            <li className={`ml-10 text-${navLinkColor} test-sm uppercase hover:border-b`}>{l.label}</li>
                         </HashLink>)}
                     </ul>
                 </div>
@@ -44,7 +56,7 @@ export default function Navbar({ links }: { links: HeaderLink[] }) {
                             </div>
                         </div>
                         <div className='border-b border-gray-300 my-4'>
-                            <p className='w-[85%] md:w-[90%] py-4'>Making code come alive</p>
+                            <p className='w-[85%] md:w-[90%] py-4'>Bring code to life</p>
                         </div>
                         <div>
                             <ul>
