@@ -6,6 +6,12 @@ body {
   @apply bg-bg text-strong tracking-wide
 }
 
+@layer base {
+  .portfolio-content {
+    @apply w-full lg:h-screen p-8 lg:p-16 place-self-center
+  }
+}
+
 h1,
 h2,
 h3,
@@ -16,11 +22,11 @@ h6 {
 }
 
 h1 {
-  @apply text-4xl sm:text-5xl md:text-6xl
+  @apply text-3xl sm:text-5xl md:text-6xl
 }
 
 h2 {
-  @apply text-3xl sm:text-4xl
+  @apply text-2xl sm:text-4xl
 }
 
 li {

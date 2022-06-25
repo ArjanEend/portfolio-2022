@@ -10,6 +10,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Panzerdogs from './components/Panzerdogs';
+import GoodJob from './components/GoodJob';
 
 const routes: Array<HeaderLink & AppRoute> = [
   { path: "/", label: "Home", element: <Home /> },
@@ -17,7 +18,8 @@ const routes: Array<HeaderLink & AppRoute> = [
   { path: "/#skills", label: "Skills", element: <Home /> },
   { path: "/#projects", label: "Projects", element: <Home /> },
   { path: "/#contact", label: "Contact", element: <Home /> },
-  { path: "/projects/panzerdogs", label: "Panzerdogs", element: <Panzerdogs /> }
+  { path: "/projects/panzerdogs", label: "Panzerdogs", element: <Panzerdogs /> },
+  { path: "/projects/goodjob", label: "Good Job!", element: <GoodJob /> }
 ]
 
 function App() {

@@ -4,18 +4,16 @@ import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
 
 export default function Contact() {
     return (
-        <div id='contact' className='w-full lg:h-screen'>
+        <div id='contact' className='portfolio-content'>
             <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
-                <p>Contact</p>
-                <p className='text-xl tacking-widest uppercase text-main'>
-                    Get in touch
-                </p>
+                <p className='text-xl tracking-widest uppercase text-strong-emphasis'>Contact</p>
+                <h2 className='py-4 text-s'>Get in touch</h2>
                 <div className='grid lg:grid-cols-5 gap-8'>
                     {/* left */}
                     <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
                         <div className='lg:p-4 h-full'>
                             <div>
-                                <img className='rounded-xl hover:scale-105 ease-in duration-300'></img>
+                                <img className='rounded-xl hover:scale-105 ease-in duration-300' alt=""></img>
                             </div>
                             <div>
                                 <h2 className='py-2'>Name here</h2>
