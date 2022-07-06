@@ -10,7 +10,7 @@ export default function Projects() {
                 <h2 className='py-4 text-s'>What I made</h2>
                 <div className='grid md:grid-cols-2 gap-8'>
 
-                    <ProjectItem title="Panzerdogs" backgroundImg="/assets/skills/unity3d.png" url="/projects/panzerdogs"></ProjectItem>
+                    <ProjectItem title="Panzerdogs" backgroundImg="/assets/projects/panzerdogs.mp4" url="/projects/panzerdogs"></ProjectItem>
                     <ProjectItem title="Good Job!" backgroundImg="/assets/projects/goodjob.jpg" url="/projects/goodjob"></ProjectItem>
                 </div>
 

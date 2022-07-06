@@ -7,19 +7,18 @@ export function GoodJob() {
             <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
                 <div className='absolute left-0 w-full h-[30vh] lg:h-40vh bg-black/50 z-10' />
                 <div className='absolute w-full bg-cover h-[30vh] lg:h-40vh bg-center z-[1]' style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/projects/goodjob.jpg)` }} />
-                <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
+                <div className='absolute top-[70%] lg:top-[50%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
                     <h2 className='py-2'>Good Job!</h2>
                     <h3>
                         Publisher: Nintendo
-                        Unity3D
-
-                        Android/iOS/WebGL/Steam
+                        <br />
+                        Engine: Unity3D
                     </h3>
                 </div>
             </div>
 
             <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8'>
-                <div className='col-span-4'>
+                <div className='col-span-3'>
                     <p>Project</p>
                     <h2>Overview</h2>
                     <p>
@@ -30,34 +29,26 @@ export function GoodJob() {
                 </div>
                 <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
                     <div className='p-2'>
-                        <p>Main Contributions</p>
+                        <h4>Contributions</h4>
                         <div>
-                            <p><RiRadioButtonFill />UI Animations, Flow & Logic Programming</p>
-                            <p><RiRadioButtonFill />Developing tools to be used by Level Designers</p>
-                            <p><RiRadioButtonFill />Implementing specific gameplay features & animations</p>
+                            <p className='flex items-center my-2'><RiRadioButtonFill className='min-w-[10px] max-w-[10px] mr-1' />Main developer for UI</p>
+                            <p className='flex items-center my-2'><RiRadioButtonFill className='min-w-[10px] max-w-[10px] mr-1' />Tools for level designers</p>
+                            <p className='flex items-center my-2'><RiRadioButtonFill className='min-w-[10px] max-w-[10px] mr-1' />Gameplay, procedural animations</p>
                         </div>
                     </div>
                 </div>
                 <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
                     <div className='p-2'>
-                        <p>Achievements</p>
+                        <h4>Achievements</h4>
                         <div>
-                            <p><RiRadioButtonFill />Working together with a bigger team and a succesful console launch</p>
-                            <p><RiRadioButtonFill />Developing tools to be used by Level Designers</p>
-                            <p><RiRadioButtonFill />Implementing specific gameplay features & animations</p>
+                            <p className='flex items-center my-2'><RiRadioButtonFill className='min-w-[10px] max-w-[10px] mr-1' />Succesful console launch with a big team</p>
+                            <p className='flex items-center my-2'><RiRadioButtonFill className='min-w-[10px] max-w-[10px] mr-1' />Solving core problems with physics & gameplay</p>
+                            <p className='flex items-center my-2'><RiRadioButtonFill className='min-w-[10px] max-w-[10px] mr-1' />Delivering UI bug-free</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-        - Working together with a bigger team and a succesful console launch
-        - Finding technical issues with the core of the game and implementing solutions that leave the least impact on development
-        - Finishing all known UI bugs before leaving the project
-
-
-        Nintendo E-Shop
     </>)
 }
 

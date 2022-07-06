@@ -8,7 +8,6 @@ export interface AppRoute {
 export default function Routing({ routes }: { routes: AppRoute[] }) {
 
     return <Routes>
-        <Route path="/" element={<div />} />
         {routes.map((r, i) =>
             <Route key={i} path={r.path} element={r.element} />
         )}

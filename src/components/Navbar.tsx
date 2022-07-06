@@ -30,17 +30,17 @@ export default function Navbar({ links }: { links: HeaderLink[] }) {
     }, [match]);
 
     return (
-        <div className={`fixed bg-${navColor} w-full h-20 border-[#272626] border-solid border-b-${match ? 0 : 4} z-[100]`}>
+        <div className={`fixed bg-${navColor} w-full h-20 border-strong border-solid border-b-${match ? 0 : 4} z-[100]`}>
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
                 <div>
                     <ul className='hidden md:flex'>
-                        {links.filter(l => !l.path.includes("projects/")).map(l => <HashLink smooth key={l.path} to={l.path}>
+                        {links.filter(l => !l.path.includes("projects/")).map(l => <HashLink smooth key={l.path} to={"/" + l.path}>
                             <li className={`ml-10 text-${navLinkColor} test-sm uppercase hover:border-b`}>{l.label}</li>
                         </HashLink>)}
                     </ul>
                 </div>
                 <div onClick={handleNav} className='md:hidden'>
-                    <AiOutlineMenu size={25}></AiOutlineMenu>
+                    <AiOutlineMenu color={match ? "white" : "black"} size={25}></AiOutlineMenu>
                 </div>
             </div>
 
@@ -61,7 +61,7 @@ export default function Navbar({ links }: { links: HeaderLink[] }) {
                         <div>
                             <ul>
 
-                                {links.map(l => <HashLink smooth key={l.path} to={l.path}>
+                                {links.filter(l => !l.path.includes("projects/")).map(l => <HashLink smooth key={l.path} to={l.path}>
                                     <li onClick={() => setDisplayNav(false)} className='py-4 text-sm'>{l.label}</li>
                                 </HashLink>)}
                             </ul>
