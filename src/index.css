@@ -40,5 +40,10 @@ li {
 }
 
 button {
-  @apply shadow-xl shadow-soft rounded-xl uppercase bg-gradient-to-r from-red-300 to-blue-400 text-white
+  @apply  border-strong border-4 uppercase bg-gradient-to-b from-bg-300 to-soft text-strong font-bold transition-all ease-bounce duration-100
+}
+
+button:hover
+{
+  @apply scale-90
 }

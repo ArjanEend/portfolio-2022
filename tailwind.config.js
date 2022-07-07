@@ -9,7 +9,8 @@ module.exports = {
       transitionTimingFunction: {
         'in-expo': 'cubic-bezier(0.95, 0.05, 0.795, 0.035)',
         'out-expo': 'cubic-bezier(0.19, 1, 0.22, 1)',
-        'bounce': 'cubic-bezier(.18,-0.01,.42,1.34)'
+        'bounce': 'cubic-bezier(.18,-0.01,.42,1.34)',
+        'bouncefast': 'cubic-bezier(0.33, 0.07, 0.15, 1.74)'
       },
       boxShadow: {
         'square': '8px 8px 0px 2px rgba(0, 0, 0, 1)',

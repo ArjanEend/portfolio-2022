@@ -30,7 +30,7 @@ export default function Navbar({ links }: { links: HeaderLink[] }) {
     }, [match]);
 
     return (
-        <div className={`fixed bg-${navColor} w-full h-20 border-strong border-solid border-b-${match ? 0 : 4} z-[100]`}>
+        <div className={`fixed bg-${navColor} w-full h-20 border-strong border-solid border-${match ? 0 : 4} border-t-0 border-r-0 border-l-0 z-[100]`}>
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
                 <div>
                     <ul className='hidden md:flex'>

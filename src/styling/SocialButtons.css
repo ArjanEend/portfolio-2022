@@ -1,0 +1,9 @@
+.roundbutton
+{
+    @apply rounded-full bg-main border-[#272626] border-[6px]  p-4 cursor-pointer hover:scale-[120%] ease-bouncefast duration-150
+}
+
+.buttonicon
+{
+    @apply group-hover:scale-[130%] transition-all ease-bouncefast duration-150 delay-[50ms]
+}

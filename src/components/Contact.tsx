@@ -17,7 +17,7 @@ export default function Contact() {
                                 <img className='rounded-xl hover:scale-105 ease-in duration-300' alt=""></img>
                             </div>
                             <div>
-                                <h2 className='py-2'>Name here</h2>
+                                <h2 className='py-2'>Arjan Cordia</h2>
                                 <p>Full Stack Developer</p>
                                 <p className='py-4'>Contact me here, maybe? :D</p>
                             </div>
