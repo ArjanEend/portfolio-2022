@@ -13,7 +13,8 @@ module.exports = {
         'bouncefast': 'cubic-bezier(0.33, 0.07, 0.15, 1.74)'
       },
       boxShadow: {
-        'square': '8px 8px 0px 2px rgba(0, 0, 0, 1)',
+        'square': '6px 6px 0px 2px rgba(0, 0, 0, 1)',
+        'square-small': '8px 8px 0px 0px rgba(0, 0, 0, 1)',
         'inside': 'inset 0px 0px 0px 8px rgba(0, 0, 0, 1)',
         'fill': 'inset 0px 0px 0px 200px rgba(0, 0, 0, 1)'
       }

@@ -1,8 +1,9 @@
-import React, { ReactNode, useEffect, useState } from 'react';
+import React, { ReactNode, useEffect, useMemo, useState } from 'react';
 import { Link, useMatch, useNavigate, useRoutes } from 'react-router-dom';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HashLink } from 'react-router-hash-link';
+import { SocialButtons } from './SocialButtons';
 
 
 export interface HeaderLink {
@@ -29,13 +30,17 @@ export default function Navbar({ links }: { links: HeaderLink[] }) {
         setNavLinkColor("black");
     }, [match]);
 
+    const topClassName = useMemo(() =>
+        `fixed bg-${navColor} w-full h-20 border-strong border-solid border-${match ? 0 : 4} border-t-0 border-r-0 border-l-0 z-[100]`
+        , [navColor, match]);
+
     return (
-        <div className={`fixed bg-${navColor} w-full h-20 border-strong border-solid border-${match ? 0 : 4} border-t-0 border-r-0 border-l-0 z-[100]`}>
+        <div className={topClassName}>
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
                 <div>
                     <ul className='hidden md:flex'>
                         {links.filter(l => !l.path.includes("projects/")).map(l => <HashLink smooth key={l.path} to={"/" + l.path}>
-                            <li className={`ml-10 text-${navLinkColor} test-sm uppercase hover:border-b`}>{l.label}</li>
+                            <li className={`ml-10 text-${navLinkColor} border-${navLinkColor} test-sm uppercase hover:border-b`}>{l.label}</li>
                         </HashLink>)}
                     </ul>
                 </div>
@@ -68,17 +73,7 @@ export default function Navbar({ links }: { links: HeaderLink[] }) {
                         </div>
                         <div className='pt-40'>
                             <p className='uppercase tracking-widest text-[#5651e5]'>Let's connect</p>
-                            <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-150'>
-                                    <FaLinkedin />
-                                </div>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-150'>
-                                    <FaGithub />
-                                </div>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-150'>
-                                    <FaLinkedin />
-                                </div>
-                            </div>
+                            <SocialButtons />
                         </div>
                     </div>
                 </div>

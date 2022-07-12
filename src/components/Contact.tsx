@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
+import { HashLink } from 'react-router-hash-link'
 import { SocialButtons } from './SocialButtons'
 
 export default function Contact() {
@@ -60,11 +61,11 @@ export default function Contact() {
                     </div>
                 </div>
                 <div className='flex justify-center py-12'>
-                    <a href='/'>
+                    <HashLink smooth to={"#top"}>
                         <div>
                             <HiOutlineChevronDoubleUp />
                         </div>
-                    </a>
+                    </HashLink>
                 </div>
             </div>
         </div>
