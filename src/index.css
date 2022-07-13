@@ -8,7 +8,7 @@ body {
 
 @layer base {
   .portfolio-content {
-    @apply w-full lg:h-screen p-8 lg:p-16 place-self-center
+    @apply w-full lg:min-h-screen p-8 lg:p-16 place-self-center
   }
 }
 
