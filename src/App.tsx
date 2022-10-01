@@ -32,7 +32,7 @@ const routes: Array<HeaderLink & AppRoute> = [
   { path: "#contact", label: "Contact", element: <MainContent /> },
   { path: "/projects/panzerdogs", label: "Panzerdogs", element: <Panzerdogs /> },
   { path: "/projects/goodjob", label: "Good Job!", element: <GoodJob /> },
-  { path: "/projects/stormbound", label: "Stormbound", element: <Stormbound /> }
+  { path: "/projects/stormbound", label: "Stormbound", element: <Stormbound /> },
   { path: "/projects/voggel", label: "Voggel", element: <Voggel /> }
 ]
 
