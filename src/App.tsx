@@ -12,6 +12,7 @@ import Contact from './components/Contact';
 import Panzerdogs from './components/Panzerdogs';
 import GoodJob from './components/GoodJob';
 import Stormbound from './components/Stormbound';
+import Voggel from './components/Voggel';
 
 function MainContent() {
   return <>
@@ -32,6 +33,7 @@ const routes: Array<HeaderLink & AppRoute> = [
   { path: "/projects/panzerdogs", label: "Panzerdogs", element: <Panzerdogs /> },
   { path: "/projects/goodjob", label: "Good Job!", element: <GoodJob /> },
   { path: "/projects/stormbound", label: "Stormbound", element: <Stormbound /> }
+  { path: "/projects/voggel", label: "Voggel", element: <Voggel /> }
 ]
 
 function App() {
