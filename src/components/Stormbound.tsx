@@ -7,10 +7,10 @@ export default function Stormbound() {
             <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
                 <div className='absolute left-0 w-full h-[30vh] lg:h-40vh bg-black/80 z-10' />
                 <div className='absolute w-full bg-cover h-[30vh] lg:h-40vh bg-center z-[1]' style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/projects/stormbound.jpg)` }} >
-                    <video className='object-cover' muted loop autoPlay={true} src={`${process.env.PUBLIC_URL}/assets/projects/stormbound.mp4`} />
+                    <video className='object-cover' playsInline muted loop autoPlay={true} src={`${process.env.PUBLIC_URL}/assets/projects/stormbound.mp4`} />
                 </div>
                 <div className='absolute top-[70%] lg:top-[50%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-                    <h2 className='py-2'>Panzerdogs</h2>
+                    <h2 className='py-2'>Stormbound</h2>
                     <h3>Web3/Rust/Typescript</h3>
                 </div>
             </div>

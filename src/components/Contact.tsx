@@ -28,12 +28,12 @@ export default function Contact() {
                             </div>
                             <div>
                                 <h2 className='py-2'>Arjan Cordia</h2>
-                                <p>Full Stack Developer</p>
-                                <p className='py-4'>You can contact me for Game Development or Web3 projects.</p>
+                                <p>Software Architect</p>
+                                <p className='py-4'>You can contact me through this form or socials.</p>
                             </div>
                             <img
                                 className='border-4 border-strong-emphasis h-auto'
-                                src={process.env.PUBLIC_URL + '/assets/contact.png'}
+                                src={process.env.PUBLIC_URL + '/assets/contact.jpg'}
                                 alt='/'
                             />
                             <div>

@@ -40,10 +40,10 @@ export default function Skills() {
                     <div className='flex align-center p-4 bg-bg-300 shadow-square hover:shadow-square-small hover:scale-105 ease-in duration-300'>
                         <div className='grid w-full grid-cols-2 gap-4 justify-center items-center'>
                             <div className='m-auto'>
-                                <img className='max-h-[64px]' src={process.env.PUBLIC_URL + '/assets/skills/solidity.svg'} width='64px' height='64px' alt='/' />
+                                <img className='max-h-[64px]' src={process.env.PUBLIC_URL + '/assets/skills/azure.png'} width='64px' height='64px' alt='/' />
                             </div>
                             <div className='flex flex-col items-center justify-center'>
-                                <h3>Solidity</h3>
+                                <h3>Azure</h3>
                             </div>
                         </div>
                     </div>

@@ -4,7 +4,7 @@ export default function ProjectItem({ title, backgroundImg, url, info }: { title
     return (
         <div className='relative flex max-h-[250px] min-h-[250px] items-center justify-center h-auto w-full p-2 group shadow-inside hover:shadow-fill shadow-strong-emphasis hover:shadow-strong-emphasis transition-all duration-300 ease-out'>
             <div className='w-full h-full overflow-hidden'>
-                {backgroundImg.includes(".mp4") && <video muted loop autoPlay src={process.env.PUBLIC_URL + backgroundImg} className='object-cover group-hover:opacity-20' />}
+                {backgroundImg.includes(".mp4") && <video playsInline muted loop autoPlay src={process.env.PUBLIC_URL + backgroundImg} className='object-cover group-hover:opacity-20' />}
                 {!backgroundImg.includes(".mp4") && <img src={process.env.PUBLIC_URL + backgroundImg} className='object-cover group-hover:opacity-20' alt='/' />}
             </div>
             <div className='block opacity-0 group-hover:opacity-100 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] '>
