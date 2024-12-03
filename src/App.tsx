@@ -1,8 +1,6 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Navbar, { HeaderLink } from './components/Navbar';
-import { BrowserRouter, HashRouter, Routes } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import Home from './components/Home';
 import Routing, { AppRoute } from './components/Routing';
 import About from './components/About';

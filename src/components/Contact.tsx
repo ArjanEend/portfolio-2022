@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { useState } from 'react'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
 import { HashLink } from 'react-router-hash-link'
 import { SocialButtons } from './SocialButtons'

@@ -1,7 +1,6 @@
-import React, { ReactNode, useEffect, useMemo, useState } from 'react';
-import { Link, useMatch, useNavigate, useRoutes } from 'react-router-dom';
+import { useEffect, useMemo, useState } from 'react';
+import { useMatch } from 'react-router-dom';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HashLink } from 'react-router-hash-link';
 import { SocialButtons } from './SocialButtons';
 
