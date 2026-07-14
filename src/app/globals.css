@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-bg text-strong tracking-wide antialiased min-h-screen;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-strong font-display;
+  }
+
+  h1 {
+    @apply text-4xl sm:text-6xl md:text-7xl tracking-tight;
+  }
+
+  h2 {
+    @apply text-3xl sm:text-5xl md:text-6xl tracking-tight;
+  }
+
+  h3 {
+    @apply text-2xl sm:text-3xl tracking-tight;
+  }
+
+  h4 {
+    @apply text-xl sm:text-2xl;
+  }
+
+  /* Custom input styles for Neo-brutalism */
+  input, textarea {
+    @apply w-full border-[3px] border-black p-4 bg-white text-strong font-medium shadow-brutal focus:outline-none focus:translate-x-[-2px] focus:translate-y-[-2px] focus:shadow-brutal-lg transition-all duration-100 placeholder:text-gray-500;
+  }
+
+  label {
+    @apply font-bold text-sm uppercase tracking-wider text-strong mb-2 block;
+  }
+}
+
+@layer components {
+  .portfolio-content {
+    @apply w-full max-w-[1240px] mx-auto p-6 md:p-12 lg:p-16;
+  }
+
+  .btn-brutal {
+    @apply inline-block text-center border-[3px] border-black bg-duck-beak text-white font-bold uppercase tracking-wider px-6 py-3 transition-all duration-150 shadow-brutal hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-brutal-lg active:translate-x-0 active:translate-y-0 active:shadow-none cursor-pointer;
+  }
+
+  .btn-brutal-secondary {
+    @apply inline-block text-center border-[3px] border-black bg-duck-blue text-strong font-bold uppercase tracking-wider px-6 py-3 transition-all duration-150 shadow-brutal hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-brutal-lg active:translate-x-0 active:translate-y-0 active:shadow-none cursor-pointer;
+  }
+
+  .btn-brutal-accent {
+    @apply inline-block text-center border-[3px] border-black bg-duck-yellow text-black font-bold uppercase tracking-wider px-6 py-3 transition-all duration-150 shadow-brutal hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-brutal-lg active:translate-x-0 active:translate-y-0 active:shadow-none cursor-pointer;
+  }
+
+  .card-brutal {
+    @apply border-[3px] border-black p-6 bg-white shadow-brutal hover:translate-x-[-3px] hover:translate-y-[-3px] hover:shadow-brutal-lg transition-all duration-200;
+  }
+
+  .badge-brutal {
+    @apply inline-block border-[2px] border-black font-bold text-xs uppercase px-3 py-1 rounded-full bg-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)];
+  }
+
+  .badge-brutal-yellow {
+    @apply inline-block border-[2px] border-black font-bold text-xs uppercase px-3 py-1 rounded-full bg-duck-yellow text-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)];
+  }
+
+  .badge-brutal-blue {
+    @apply inline-block border-[2px] border-black font-bold text-xs uppercase px-3 py-1 rounded-full bg-duck-blue text-strong shadow-[2px_2px_0px_0px_rgba(0,0,0,1)];
+  }
+
+  .badge-brutal-coral {
+    @apply inline-block border-[2px] border-black font-bold text-xs uppercase px-3 py-1 rounded-full bg-duck-beak text-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)];
+  }
+
+  .badge-brutal-purple {
+    @apply inline-block border-[2px] border-black font-bold text-xs uppercase px-3 py-1 rounded-full bg-duck-purple text-strong shadow-[2px_2px_0px_0px_rgba(0,0,0,1)];
+  }
+
+  .badge-brutal-green {
+    @apply inline-block border-[2px] border-black font-bold text-xs uppercase px-3 py-1 rounded-full bg-duck-green text-strong shadow-[2px_2px_0px_0px_rgba(0,0,0,1)];
+  }
+}
+
+@keyframes page-enter {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-wipe {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.page-transition {
+  animation: page-enter 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-wipe {
+  animation: slide-wipe 0.4s cubic-bezier(0.85, 0, 0.15, 1) forwards;
+}
